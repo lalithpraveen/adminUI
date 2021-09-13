@@ -1,0 +1,21 @@
+.active-page {
+  border-radius: 100%;
+  color: white;
+  background-color: blue;
+  padding: 4px 11px;
+  margin: 15px 7px;
+  cursor: pointer;
+}
+
+.page {
+  border-radius: 100%;
+  color: blue;
+  background-color: white;
+  padding: 4px 11px;
+  margin: 0px 7px;
+  cursor: pointer;
+}
+
+.page:hover {
+  border: 1px solid blue;
+}

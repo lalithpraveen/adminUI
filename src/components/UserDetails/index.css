@@ -1,0 +1,43 @@
+.user-details {
+  border-bottom: 1px solid black;
+}
+
+.user-selected {
+  background-color: #e8dcdc8f;
+}
+
+.user-details-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-btn,
+.delete-icon-btn {
+  cursor: pointer;
+  border: none;
+}
+
+.edit-btn {
+  color: #0e69d7;
+}
+
+.delete-icon-btn {
+  color: #dc3545;
+}
+
+.edit-btn:hover {
+  background: #0e69d7;
+  color: #fff;
+}
+
+.delete-icon-btn:hover {
+  background: #dc3545;
+  color: #fff;
+}

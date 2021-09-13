@@ -1,0 +1,56 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-family: "Roboto";
+  min-height: 100vh;
+}
+
+.users-list-container {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .users-list-container {
+    width: 90%;
+    max-width: 1110px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    flex-direction: row;
+  }
+}
+
+.admin-heading {
+  color: #ffffff;
+  font-family: "Bree Serif";
+  font-size: 36px;
+  margin-left: 12px;
+}
+
+.logo-img {
+  height: 45px;
+  width: 70px;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}

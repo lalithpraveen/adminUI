@@ -1,0 +1,15 @@
+.page-card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.page-icon {
+  color: blue;
+  cursor: pointer;
+}
+
+.page-icon:hover {
+  border-radius: 100%;
+  border: 1px solid blue;
+  padding: 2px;
+}
