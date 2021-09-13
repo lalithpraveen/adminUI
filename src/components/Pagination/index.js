@@ -1,5 +1,10 @@
 import { Component } from "react";
-import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
+import {
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
+  FaForward,
+  FaBackward,
+} from "react-icons/fa";
 
 import PageNumber from "../PageNumber";
 import "./index.css";
@@ -41,6 +46,17 @@ class Pagination extends Component {
     }
   };
 
+  gotoInitialPage = () => {
+    const { changePage } = this.props;
+    changePage(1);
+  };
+
+  gotoLastPage = () => {
+    const { totalPages } = this.state;
+    const { changePage } = this.props;
+    changePage(totalPages.length);
+  };
+
   setPresentPage = (currentPage) => {
     const { changePage } = this.props;
     changePage(currentPage);
@@ -52,6 +68,10 @@ class Pagination extends Component {
 
     return (
       <div className="page-card">
+        <FaBackward
+          onClick={this.gotoInitialPage}
+          className="special-icon page-icon"
+        />
         <FaLongArrowAltLeft
           onClick={this.onClickPreviousPage}
           className="page-icon"
@@ -68,9 +88,14 @@ class Pagination extends Component {
           onClick={this.onClickNextPage}
           className="page-icon"
         />
+        <FaForward
+          onClick={this.gotoLastPage}
+          className="special-icon page-icon"
+        />
       </div>
     );
   }
 }
 
 export default Pagination;
+
